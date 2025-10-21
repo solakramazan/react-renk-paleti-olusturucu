@@ -145,26 +145,59 @@ Build dosyaları `dist/` klasöründe oluşturulacaktır.
 
 ```
 react-renk-paleti-olusturucu/
-├── public/              # Statik dosyalar
-├── src/
-│   ├── components/      # React bileşenleri
-│   │   └── ColorBox.jsx # Renk kutusu bileşeni
-│   ├── App.jsx          # Ana uygulama bileşeni
-│   ├── App.css          # Ana stil dosyası
-│   ├── index.css        # Global stiller
-│   └── main.jsx         # Giriş noktası
-├── index.html           # HTML şablonu
-├── package.json         # Proje bağımlılıkları
-├── vite.config.js       # Vite yapılandırması
-└── README.md            # Proje dokümantasyonu
+│
+├── 📁 public/                    # Statik dosyalar
+│   └── vite.svg
+│
+├── 📁 src/
+│   ├── 📁 components/            # React bileşenleri
+│   │   └── ColorBox.jsx          # Renk kutusu bileşeni
+│   │
+│   ├── App.jsx                   # Ana uygulama bileşeni
+│   ├── App.css                   # Uygulama stilleri
+│   ├── index.css                 # Global stiller
+│   └── main.jsx                  # Giriş noktası
+│
+├── index.html                    # HTML şablonu
+├── package.json                  # Proje bağımlılıkları
+├── vite.config.js               # Vite yapılandırması
+├── eslint.config.js             # ESLint kuralları
+└── README.md                     # Dokümantasyon
 ```
 
 ## 🛠️ Teknolojiler
 
-- **React 18.3.1**: UI kütüphanesi
-- **Vite 5.4.1**: Modern build aracı
-- **CSS3**: Animasyonlar ve stil
-- **ESLint**: Kod kalitesi ve standartları
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="48" height="48" alt="React" />
+<br>React
+</td>
+<td align="center" width="96">
+<img src="https://vitejs.dev/logo.svg" width="48" height="48" alt="Vite" />
+<br>Vite
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" />
+<br>JavaScript
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="48" height="48" alt="CSS3" />
+<br>CSS3
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="48" height="48" alt="HTML5" />
+<br>HTML5
+</td>
+</tr>
+</table>
+
+### Ana Teknolojiler
+
+- **⚛️ React 18.3.1** - Kullanıcı arayüzü kütüphanesi
+- **⚡ Vite 5.4.1** - Modern ve hızlı build aracı
+- **🎨 CSS3** - Animasyonlar ve responsive tasarım
+- **📏 ESLint** - Kod kalitesi ve standartları
 
 ## 🎯 Temel Fonksiyonlar
 
