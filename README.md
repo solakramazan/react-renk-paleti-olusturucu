@@ -283,52 +283,164 @@ background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 
 ## 🌟 Gelecek Özellikler
 
-- [ ] Renk geçmişi (History)
-- [ ] Farklı renk formatları (RGB, HSL, CMYK)
-- [ ] Palet export (PNG, CSS, JSON)
-- [ ] Önceden tanımlı palet şablonları
-- [ ] Renk uyumu önerileri
-- [ ] Karanlık mod
-- [ ] Özel renk ekleme
+- [ ] 📜 **Renk Geçmişi** - Önceki paletleri geri yükleme
+- [ ] 🎨 **Çoklu Format Desteği** - RGB, HSL, CMYK formatları
+- [ ] 💾 **Palet Export** - PNG, CSS, JSON, SVG formatlarında dışa aktarma
+- [ ] 🎭 **Palet Şablonları** - Hazır renk şemaları (Monochrome, Analogous, vb.)
+- [ ] 🧠 **AI Renk Önerileri** - Yapay zeka destekli uyumlu renk önerileri
+- [ ] 🌙 **Karanlık Mod** - Göz dostu karanlık tema
+- [ ] ➕ **Manuel Renk Ekleme** - Kullanıcı tanımlı renk girişi
+- [ ] 🔄 **Gradient Oluşturucu** - Seçili renklerle gradient üretme
+- [ ] 📱 **PWA Desteği** - Çevrimdışı kullanım ve mobil uygulama
+- [ ] 🌍 **Çoklu Dil Desteği** - İngilizce, Türkçe ve diğer diller
 
 ## 🤝 Katkıda Bulunma
 
-Katkılarınızı bekliyoruz! Lütfen şu adımları izleyin:
+Katkılarınızı bekliyoruz! Her türlü katkı değerlidir. 💙
 
-1. Fork yapın
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request açın
+### Katkı Süreci
+
+1️⃣ **Fork** yapın
+
+2️⃣ **Feature branch** oluşturun
+```bash
+git checkout -b feature/harika-ozellik
+```
+
+3️⃣ **Değişikliklerinizi commit** edin
+```bash
+git commit -m 'feat: Harika özellik eklendi'
+```
+
+4️⃣ **Branch'inizi push** edin
+```bash
+git push origin feature/harika-ozellik
+```
+
+5️⃣ **Pull Request** açın
+
+### Commit Mesaj Kuralları
+
+- `feat:` Yeni özellik
+- `fix:` Hata düzeltme
+- `docs:` Dokümantasyon değişikliği
+- `style:` Kod formatı (işlevselliği etkilemez)
+- `refactor:` Kod iyileştirme
+- `test:` Test ekleme/düzeltme
+- `chore:` Yapılandırma değişikliği
+
+### Geliştirme Ortamı
+
+```bash
+# Bağımlılıkları yükle
+npm install
+
+# Geliştirme sunucusunu başlat
+npm run dev
+
+# Linting kontrolü
+npm run lint
+
+# Production build
+npm run build
+```
+
+## 🐛 Hata Bildirimi
+
+Bir hata mı buldunuz? [Issue açın](https://github.com/solakramazan/react-renk-paleti-olusturucu/issues/new)
+
+**Lütfen şunları ekleyin:**
+- Hatanın açıklaması
+- Hata adımlarını yeniden oluşturma
+- Beklenen davranış
+- Ekran görüntüleri (varsa)
+- Tarayıcı ve işletim sistemi bilgisi
 
 ## 📝 Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+Bu proje **MIT lisansı** altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+
+```
+MIT License
+
+Copyright (c) 2025 Ramazan Solak
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software...
+```
 
 ## 👤 Geliştirici
 
-**İsminiz**
+<div align="center">
 
-- GitHub: [@kullaniciadi](https://github.com/kullaniciadi)
-- LinkedIn: [İsminiz](https://linkedin.com/in/kullaniciadi)
+### **Ramazan Solak**
+
+[![GitHub](https://img.shields.io/badge/GitHub-solakramazan-181717?style=for-the-badge&logo=github)](https://github.com/solakramazan)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/solakramazan)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Website-FF6B6B?style=for-the-badge&logo=google-chrome)](https://solakramazan.github.io)
+
+</div>
 
 ## 🙏 Teşekkürler
 
-- [Coolors.co](https://coolors.co/) - İlham kaynağı
-- [React](https://react.dev/) - Harika bir kütüphane
-- [Vite](https://vitejs.dev/) - Hızlı build aracı
+Bu proje geliştirilirken ilham alınan kaynaklar:
 
-## 📸 Ekran Görüntüleri
+- 🎨 [**Coolors.co**](https://coolors.co/) - Kullanıcı deneyimi ve tasarım ilhamı
+- ⚛️ [**React**](https://react.dev/) - Güçlü ve esnek UI kütüphanesi
+- ⚡ [**Vite**](https://vitejs.dev/) - Hızlı ve modern build aracı
+- � [**MDN Web Docs**](https://developer.mozilla.org/) - Web teknolojileri referansı
+- 🌈 [**Color Theory**](https://www.interaction-design.org/literature/topics/color-theory) - Renk teorisi kaynakları
 
-### Ana Ekran
-Uygulamayı başlattığınızda 5 rastgele renkten oluşan bir palet görürsünüz.
+## 📊 Proje İstatistikleri
 
-### Renk Kilitleme
-Beğendiğiniz renkleri kilitleyin, diğer renkler değişsin.
+![GitHub stars](https://img.shields.io/github/stars/solakramazan/react-renk-paleti-olusturucu?style=social)
+![GitHub forks](https://img.shields.io/github/forks/solakramazan/react-renk-paleti-olusturucu?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/solakramazan/react-renk-paleti-olusturucu?style=social)
 
-### Kopyalama
-Renk kodunu tek tıkla kopyalayın, görsel geri bildirim alın.
+## 🔗 İlgili Projeler
+
+Diğer React projelerime göz atın:
+
+- [BMI Hesaplayıcı](https://github.com/solakramazan/react-bmi-hesaplayici)
+- [Döviz Çevirici](https://github.com/solakramazan/react-doviz-cevirici)
+- [Hava Durumu](https://github.com/solakramazan/react-hava-durumu)
+- [Hesap Makinesi](https://github.com/solakramazan/react-hesap-makinesi)
+
+## ❓ SSS (Sık Sorulan Sorular)
+
+<details>
+<summary><b>Renk formatını nasıl değiştirebilirim?</b></summary>
+<br>
+Şu an sadece HEX formatı desteklenmektedir. RGB ve HSL desteği gelecek güncellemelerde eklenecektir.
+</details>
+
+<details>
+<summary><b>Kilitli renk sayısında sınır var mı?</b></summary>
+<br>
+Hayır, istediğiniz kadar rengi kilitleyebilirsiniz. Ancak tüm renkleri kilitlerseniz yeni palet oluşturulamaz.
+</details>
+
+<details>
+<summary><b>Mobilde nasıl çalışır?</b></summary>
+<br>
+Mobil cihazlarda boşluk tuşu yerine ekrana dokunarak (tap) yeni palet oluşturabilirsiniz.
+</details>
+
+<details>
+<summary><b>Paletleri nasıl kaydedebilirim?</b></summary>
+<br>
+Şu an manuel kaydetme özelliği yoktur. Renk kodlarını kopyalayıp başka bir yerde saklayabilirsiniz. Gelecek güncellemelerde export özelliği eklenecektir.
+</details>
 
 ---
 
-⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
+<div align="center">
+
+### ⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
+
+**Made with ❤️ by [Ramazan Solak](https://github.com/solakramazan)**
+
+</div>
