@@ -199,9 +199,9 @@ react-renk-paleti-olusturucu/
 - **🎨 CSS3** - Animasyonlar ve responsive tasarım
 - **📏 ESLint** - Kod kalitesi ve standartları
 
-## 🎯 Temel Fonksiyonlar
+## 💡 Temel Fonksiyonlar
 
-### Renk Üretimi
+### 🎲 Rastgele Renk Üretimi
 
 ```javascript
 const generateRandomColor = () => {
@@ -214,7 +214,7 @@ const generateRandomColor = () => {
 };
 ```
 
-### Renk Kontrast Hesaplama
+### 🔍 Akıllı Kontrast Hesaplama
 
 ```javascript
 const isLightColor = (hexColor) => {
@@ -222,8 +222,22 @@ const isLightColor = (hexColor) => {
   const r = parseInt(hex.substr(0, 2), 16);
   const g = parseInt(hex.substr(2, 2), 16);
   const b = parseInt(hex.substr(4, 2), 16);
+  
+  // Renk parlaklığını hesapla
   const brightness = (r * 299 + g * 587 + b * 114) / 1000;
   return brightness > 155;
+};
+```
+
+### 🔒 Akıllı Palet Oluşturma
+
+```javascript
+const generatePalette = () => {
+  const newColors = colors.map((color, index) => {
+    // Kilitli renkleri koru, diğerlerini yenile
+    return lockedColors[index] ? color : generateRandomColor();
+  });
+  setColors(newColors);
 };
 ```
 
@@ -231,19 +245,40 @@ const isLightColor = (hexColor) => {
 
 ### Renk Sayısını Değiştirme
 
-`App.jsx` dosyasında renk sayısını değiştirebilirsiniz:
+`App.jsx` dosyasında palet renk sayısını özelleştirebilirsiniz:
 
 ```javascript
-// 5 yerine istediğiniz sayıyı yazın
-setColors(Array(5).fill(null).map(() => generateRandomColor()));
+// İlk yüklemede 5 yerine istediğiniz sayıda renk
+useEffect(() => {
+  setColors(Array(7).fill(null).map(() => generateRandomColor()));
+  setLockedColors(Array(7).fill(false));
+}, []);
 ```
 
-### Tema Renkleri
+### Tema Renklerini Özelleştirme
 
-`index.css` ve `App.css` dosyalarındaki gradient renklerini değiştirerek kendi temanızı oluşturabilirsiniz:
+`index.css` ve `App.css` dosyalarında gradient renklerini değiştirin:
 
 ```css
+/* Header gradient */
 background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+/* Özel gradientler deneyin */
+background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+```
+
+### Animasyon Hızlarını Ayarlama
+
+```css
+.color-box {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Daha hızlı animasyon için */
+.color-box {
+  transition: all 0.15s ease;
+}
 ```
 
 ## 🌟 Gelecek Özellikler
