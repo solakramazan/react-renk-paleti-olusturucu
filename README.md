@@ -129,7 +129,7 @@ const isLightColor = (hexColor) => {| İşlem | Aksiyon | Sonuç |
 
 };
 
-```**Web Tasarımcılar İçin**
+```**Ramazan Solak**
 
 ```
 
