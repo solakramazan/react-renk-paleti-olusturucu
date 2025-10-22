@@ -1,153 +1,237 @@
-# 🎨 Renk Paleti Oluşturucu
+# 🎨 Renk Paleti Oluşturucu# 🎨 Renk Paleti Oluşturucu
 
-<div align="center">
 
-![Color Palette Generator](https://img.shields.io/badge/Color-Palette-blueviolet?style=for-the-badge)
-![React](https://img.shields.io/badge/React-18.3.1-61dafb?style=for-the-badge&logo=react)
-![Vite](https://img.shields.io/badge/Vite-5.4.1-646cff?style=for-the-badge&logo=vite)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-**Modern ve interaktif renk paleti oluşturucu uygulaması**
+React ile yapmış olduğum renk paleti oluşturucu projesi. Boşluk tuşuna basarak rastgele renk paletleri oluşturabilir, beğendiğiniz renkleri kilitleyebilir ve renk kodlarını kopyalayabilirsiniz.React ile yapmış olduğum renk paleti oluşturucu projesi. Boşluk tuşuna basarak rastgele renk paletleri oluşturabilir, beğendiğiniz renkleri kilitleyebilir ve renk kodlarını kopyalayabilirsiniz.
 
-Coolors.co'dan ilham alınarak geliştirilmiş, UI/UX odaklı profesyonel bir araç.
 
-[Demo](https://your-demo-link.com) • [Özellikler](#-özellikler) • [Kurulum](#-kurulum) • [Kullanım](#-kullanım)
 
-</div>
+## 📝 Projenin Amacı## 📝 Projenin Amacı
 
----
 
-## 📋 İçindekiler
 
-- [Özellikler](#-özellikler)
-- [Ekran Görüntüleri](#-ekran-görüntüleri)
-- [Kurulum](#-kurulum)
-- [Kullanım](#-kullanım)
-- [Proje Yapısı](#-proje-yapısı)
-- [Teknolojiler](#-teknolojiler)
-- [Katkıda Bulunma](#-katkıda-bulunma)
-- [Lisans](#-lisans)
+Bu projeyi yaparken amacım, web tasarımcıların ve geliştiricilerin hızlıca renk paletleri oluşturabilmesini sağlamaktı. Coolors.co sitesinden ilham aldım ve bunu React ile yapmaya karar verdim.Bu projeyi yaparken amacım, web tasarımcıların ve geliştiricilerin hızlıca renk paletleri oluşturabilmesini sağlamaktı. Coolors.co sitesinden ilham aldım ve bunu React ile yapmaya karar verdim.
 
-## ✨ Özellikler
 
-### 🎯 Ana Özellikler
 
-- ⚡ **Hızlı Palet Üretimi** - Boşluk tuşuna basarak anında yeni palet
-- 🔒 **Akıllı Kilitleme** - Beğendiğiniz renkleri sabit tutun
-- 📋 **Tek Tıkla Kopyalama** - HEX kodlarını kolayca kopyalayın
-- 🎨 **Otomatik Kontrast** - Okunabilirlik için akıllı metin rengi
-- 📱 **Tam Responsive** - Her cihazda mükemmel görünüm
+## 🎯 Neler Yapabilirsiniz?## 🎯 Neler Yapabilirsiniz?
 
-### 💫 Kullanıcı Deneyimi
 
-- ✨ Akıcı animasyonlar ve geçişler
-- 🎭 İnteraktif hover efektleri
-- 🔔 Görsel geri bildirimler
-- ⌨️ Klavye kısayolları
-- 🎯 Minimalist ve modern tasarım
 
-## � Ekran Görüntüleri
+- **Boşluk tuşuna basarak** yeni renk paletleri oluşturabilirsiniz- **Boşluk tuşuna basarak** yeni renk paletleri oluşturabilirsiniz
 
-<div align="center">
+- **Beğendiğiniz renkleri kilitleyebilir**, diğer renkleri değiştirebilirsiniz- **Beğendiğiniz renkleri kilitleyebilir**, diğer renkleri değiştirebilirsiniz
 
-### Ana Ekran
-![Ana Ekran](./screenshots/main-screen.png)
-*5 rastgele renkten oluşan dinamik palet*
+- **Renk kodlarını tek tıkla** panoya kopyalayabilirsiniz- **Renk kodlarını tek tıkla** panoya kopyalayabilirsiniz
+
+- Renkler açık mı koyu mu olduğuna göre metin rengi otomatik ayarlanır- Renkler açık mı koyu mu olduğuna göre metin rengi otomatik ayarlanır
+
+
+
+## 🛠️ Nasıl Yaptım?## � Ekran Görüntüleri
+
+
+
+Bu projeyi yaparken şunları kullandım:<div align="center">
+
+
+
+- **React** - Arayüzü oluşturmak için### Ana Ekran
+
+- **Vite** - Projeyi hızlıca ayağa kaldırmak için![Ana Ekran](./screenshots/main-screen.png)
+
+- **CSS** - Animasyonlar ve stil için*5 rastgele renkten oluşan dinamik palet*
+
+- **JavaScript** - Renk üretme ve diğer fonksiyonlar için
 
 ### Renk Kilitleme
-![Kilitleme](./screenshots/lock-feature.png)
+
+### Temel Mantık![Kilitleme](./screenshots/lock-feature.png)
+
 *Beğendiğiniz renkleri sabitleyin*
 
-### Kopyalama
-![Kopyalama](./screenshots/copy-feature.png)
-*Tek tıkla renk kodunu kopyalayın*
+1. Her boşluk tuşuna basıldığında rastgele HEX renk kodları üretiyorum
 
-</div>
+2. Kilitlenen renkleri state'te tutup, yeni palet oluştururken onları koruyorum### Kopyalama
 
-## �🚀 Kurulum
+3. Renklerin açık mı koyu mu olduğunu hesaplayıp, metin rengini ona göre ayarlıyorum![Kopyalama](./screenshots/copy-feature.png)
 
-### 📦 Gereksinimler
+4. Clipboard API ile renk kodlarını kopyalıyorum*Tek tıkla renk kodunu kopyalayın*
 
-- **Node.js** (v14 veya üzeri)
-- **npm** veya **yarn**
 
-### ⚙️ Kurulum Adımları
+
+## 🚀 Nasıl Kullanılır?</div>
+
+
+
+### Kurulum## �🚀 Kurulum
+
+
+
+```bash### 📦 Gereksinimler
+
+# Projeyi indirin
+
+git clone https://github.com/solakramazan/react-renk-paleti-olusturucu.git- **Node.js** (v14 veya üzeri)
+
+cd react-renk-paleti-olusturucu- **npm** veya **yarn**
+
+
+
+# Paketleri yükleyin### ⚙️ Kurulum Adımları
+
+npm install
 
 1️⃣ **Projeyi Klonlayın**
-```bash
-git clone https://github.com/solakramazan/react-renk-paleti-olusturucu.git
-cd react-renk-paleti-olusturucu
+
+# Projeyi çalıştırın```bash
+
+npm run devgit clone https://github.com/solakramazan/react-renk-paleti-olusturucu.git
+
+```cd react-renk-paleti-olusturucu
+
 ```
+
+Tarayıcınızda `http://localhost:5173` adresine gidin.
 
 2️⃣ **Bağımlılıkları Yükleyin**
-```bash
+
+### Kullanım```bash
+
 npm install
-# veya
-yarn install
-```
 
-3️⃣ **Geliştirme Sunucusunu Başlatın**
-```bash
-npm run dev
-# veya
-yarn dev
-```
+- **SPACE tuşu**: Yeni palet oluşturur# veya
 
-4️⃣ **Tarayıcıda Açın**
-```
-http://localhost:5173
-```
+- **Renk kutusuna tıklama**: Renk kodunu kopyalaryarn install
 
-### 🏗️ Production Build
+- **Kilit ikonuna tıklama**: Rengi kilitler/açar```
+
+
+
+## 📂 Proje Dosyaları3️⃣ **Geliştirme Sunucusunu Başlatın**
 
 ```bash
+
+```npm run dev
+
+react-renk-paleti-olusturucu/# veya
+
+├── src/yarn dev
+
+│   ├── components/```
+
+│   │   └── ColorBox.jsx      # Her bir renk kutusu
+
+│   ├── App.jsx                # Ana uygulama4️⃣ **Tarayıcıda Açın**
+
+│   ├── App.css                # Stiller```
+
+│   └── main.jsx               # Başlangıç dosyasıhttp://localhost:5173
+
+├── index.html```
+
+└── package.json
+
+```### 🏗️ Production Build
+
+
+
+## 💡 Kod Örnekleri```bash
+
 npm run build
-# veya
+
+### Rastgele Renk Üretme# veya
+
 yarn build
-```
 
-Build dosyaları `dist/` klasöründe oluşturulacaktır.
+```javascript```
 
-## 📖 Kullanım
+const generateRandomColor = () => {
 
-### ⌨️ Klavye Kısayolları
+  const letters = '0123456789ABCDEF';Build dosyaları `dist/` klasöründe oluşturulacaktır.
 
-| Tuş | Aksiyon | Açıklama |
-|-----|---------|----------|
+  let color = '#';
+
+  for (let i = 0; i < 6; i++) {## 📖 Kullanım
+
+    color += letters[Math.floor(Math.random() * 16)];
+
+  }### ⌨️ Klavye Kısayolları
+
+  return color;
+
+};| Tuş | Aksiyon | Açıklama |
+
+```|-----|---------|----------|
+
 | <kbd>SPACE</kbd> | Yeni Palet | Kilitli olmayan renkleri yenile |
+
+### Renk Parlaklığı Hesaplama
 
 ### 🖱️ Fare İşlemleri
 
-| İşlem | Aksiyon | Sonuç |
-|-------|---------|-------|
-| **Renk Kutusuna Tıklama** | Kopyala | Renk kodu panoya kopyalanır |
-| **Kilit İkonuna Tıklama** | Kilitle/Aç | Rengi sabitler veya serbest bırakır |
-| **Renk Üzerine Hover** | Önizle | Kopyalama ikonu görünür |
+```javascript
 
-### 🎯 Kullanım Senaryoları
+const isLightColor = (hexColor) => {| İşlem | Aksiyon | Sonuç |
 
-**Web Tasarımcılar İçin**
+  const hex = hexColor.replace('#', '');|-------|---------|-------|
+
+  const r = parseInt(hex.substr(0, 2), 16);| **Renk Kutusuna Tıklama** | Kopyala | Renk kodu panoya kopyalanır |
+
+  const g = parseInt(hex.substr(2, 2), 16);| **Kilit İkonuna Tıklama** | Kilitle/Aç | Rengi sabitler veya serbest bırakır |
+
+  const b = parseInt(hex.substr(4, 2), 16);| **Renk Üzerine Hover** | Önizle | Kopyalama ikonu görünür |
+
+  const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+
+  return brightness > 155;### 🎯 Kullanım Senaryoları
+
+};
+
+```**Web Tasarımcılar İçin**
+
 ```
-1. Boşluk tuşuna basarak paletler arasında gezin
+
+## 🌟 Eklemek İstediklerim1. Boşluk tuşuna basarak paletler arasında gezin
+
 2. Beğendiğiniz renkleri kilitleyin
-3. Tamamlayıcı renkleri bulmak için yeni paletler oluşturun
-4. Renk kodlarını kopyalayıp tasarımınızda kullanın
-```
+
+- RGB ve HSL renk formatları3. Tamamlayıcı renkleri bulmak için yeni paletler oluşturun
+
+- Paletleri kaydetme özelliği4. Renk kodlarını kopyalayıp tasarımınızda kullanın
+
+- Renk geçmişi```
+
+- Karanlık mod
 
 **Geliştiriciler İçin**
-```
+
+## 👨‍💻 Yapan```
+
 1. Proje için renk paleti oluşturun
-2. HEX kodlarını CSS/SCSS değişkenlerine aktarın
+
+**Ramazan Solak**2. HEX kodlarını CSS/SCSS değişkenlerine aktarın
+
 3. Tutarlı renk şeması oluşturun
-```
 
-## 🏗️ Proje Yapısı
+- GitHub: [@solakramazan](https://github.com/solakramazan)```
 
-```
+
+
+## 📄 Lisans## 🏗️ Proje Yapısı
+
+
+
+Bu proje MIT lisansı ile lisanslanmıştır.```
+
 react-renk-paleti-olusturucu/
-│
+
+---│
+
 ├── 📁 public/                    # Statik dosyalar
-│   └── vite.svg
+
+⭐ Projeyi beğendiyseniz yıldız vermeyi unutmayın!│   └── vite.svg
+
 │
 ├── 📁 src/
 │   ├── 📁 components/            # React bileşenleri
